@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@600&family=Signika+Negative&display=swap');
 
 * {
    margin: 0;
@@ -15,10 +15,19 @@ body {
 .font-josefin {
     font-family: 'Josefin Sans', sans-serif;
 }
+.font-abel {
+    font-family: 'Abel', sans-serif;
+}
+.font-signika {
+    font-family: 'Signika Negative', sans-serif;
+}
 
 p {
     line-height: 20px;
     margin-bottom: 20px;
+    font-family: 'Abel', sans-serif;
+    font-size: large;
+    text-align: center;
 }
 h1 {
     font-family: 'Josefin Sans', sans-serif;
@@ -26,7 +35,13 @@ h1 {
     font-size: 80px;
     margin-bottom: 20px;
     text-align: center;
-
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 56px;
+    text-align: center;
+    padding: 10px 10px 
 }
 h3 {
     font-family: 'Josefin Sans', sans-serif;
@@ -36,36 +51,60 @@ h3 {
     padding: 10px 10px
 }
 h4 {
-    font-size: 24px;
+    font-size: 36px;
+    font-family:'Signika Negative', sans-serif;
     color: #444;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
-.project a {
+.line {
+    width: 300px;
+    height: 5px;
+    background: #d87625;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.ctn {
+    padding: 8px 15px;
+    background: #d87625;
+    border-radius: 30px;
+    color:#fff;
+    font-size: larger;
+    font-family: 'Abel', sans-serif;
     text-decoration: none;
-    font-size: 50px;
-    font-family:  'Josefin Sans', sans-serif;
-    color: rgb(255, 255, 255);
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(138, 115, 90, 0.555);
-    filter:drop-shadow(50%);
-    display:flex;
-    justify-content: center;
+}
+
+.row {
+    display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
-.project a:hover {
-    filter:none
+img {
+    width: 65%;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    transition: width 1s, height 2s;
 }
-.clear {
-    clear: both;
+img:hover {
+    width: 70%;
 }
-.wrapper {
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 500px;
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding-top: 20px;  
+}
+
+.projects .row {
+    margin-top: 50px;
+    padding: 10px 10px
 }
 
 .container {
@@ -86,71 +125,69 @@ h4 {
     height: 580px; 
     padding-top: 1px;
 }
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+}
+
 #top h1 {
     margin: 180px 0 40px 0;
 }
 
-#projects {
-    padding: 60px 0;
-    text-align: center;
-}
-.kiri {
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 600px;
-}
-.kanan {
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 600px;
-}
-#projects article {
-    width: 800px;
-    height: 360px;
-    float: left;
-    background-color: #f5f5f5;
-}
-#projects article:first-child {
-    margin-right: 20px;
-}
-#projects article .overlay-kiri {
-    background: rgba(255, 255, 255, .95);
-    height: 360px;
-    width: 190px;
-    padding: 40px;
-}
-#projects article .overlay-kanan {
-    background: rgba(255, 255, 255, .95);
-    height: 360px;
-    width: 190px;
-    padding: 40px;
-}
-article h4 {
-    border-bottom: 1px solid #d85725;
-    padding-bottom: 20px;
-}
-.more-link {
-    border: 1px solid #d85725;
-    color: #d85725;
-    padding: 6px 20px;
-    border-radius: 3px;
-}
-.more-link:hover {
-    background-color: #d85725;
-    color: #fff;
-}
 
 @media only screen and (max-width: 425px) {
-    .kiri, .kanan {
+    .row .col  {
         width: 100%
     }
-    .kiri {
-        margin-bottom: 20px;
+    .row .col  h4{
+        font-size: 16px;
+    }
+    .row .col  p{
+        font-size: 12px;
+    }
+    .ctn{
+        font-size: 12px;
+    }
+    img{
+        width: 120px;
+        height: auto;
+    }
+    .container h1{
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    .container h3{
+        font-size: 30px;
+        padding: 8px 8px
+    }
+    #top{
+        height: 420px; 
+    }
+    .title h2{
+        font-size: 24px;
+    }
+    .line {
+        width: 160px;
+        height: 3px;
+    }
+    section {
+        width: 80%;
+        margin: 40px auto;
     }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 900px) {
     .container {
-        padding: 0 10px
+        padding: 0 10px 15px;
     }
+    
 }
+
+@media only screen and (max-width: 768px) {
+    
+}
+
