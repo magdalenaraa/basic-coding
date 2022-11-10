@@ -119,7 +119,8 @@ img {
 .animal-list h2{
     font-family: 'Fjalla One', sans-serif;
     font-size: 40px;
-    margin: 25px;    
+    margin: 25px;  
+    color:  rgb(51, 97, 150);  
 }
 
 .familia-list >li:hover {
@@ -154,7 +155,7 @@ img {
 
 .familia-list >li img {
 	filter: grayscale();
-	width: 250px;
+	width: 270px;
 	height: 200px;
 	border-radius: 50%;
 	border: 6px solid rgb(154, 204, 212);
@@ -169,7 +170,7 @@ img {
 
 .title a {
 	font-family: 'Oswald', sans-serif;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: rgb(25, 27, 27);
 	position: relative;
     text-decoration: none;
