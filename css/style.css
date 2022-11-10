@@ -64,14 +64,48 @@ h4 {
     margin: 20px auto;
     border-radius: 5px;
 }
-.ctn {
-    padding: 8px 15px;
+
+a {
+    background-image: linear-gradient(
+      to right,
+      #d87625,
+      #d87625 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before{
+    content: '';
     background: #d87625;
-    border-radius: 30px;
-    color:#fff;
-    font-size: larger;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
+
+a {
     font-family: 'Abel', sans-serif;
-    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .row {

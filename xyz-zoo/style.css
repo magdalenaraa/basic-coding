@@ -103,7 +103,7 @@ img {
 
 }
 
-.animal-list {
+.animal-list> li{
     background: #fff;
     border-radius: 10px;
     display: flex;
@@ -112,11 +112,9 @@ img {
     padding: 20px 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     list-style-type: none;
-    justify-content: space-around;
+    box-sizing: border-box;
 }
-.animal-list li{
-    margin-bottom: 15px;
-}
+
 .animal-list h2{
     font-family: 'Fjalla One', sans-serif;
     font-size: 40px;
@@ -127,16 +125,18 @@ img {
     width: 400px;
     margin: 10px 0;
     height: 250px;
-    border-radius: 10px
+    justify-content: space-between;
 }
 .familia-list {
     margin:15px 15px 15px 15px;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
 }
 .familia-list img {
-    display: flex;
     width: 100%;
     justify-content: space-around;
+}
+div {
+    display: flex;
+    
 }
