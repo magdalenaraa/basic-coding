@@ -228,3 +228,9 @@ th {
   margin: 20px auto;
   border-radius: 5px;
 }
+
+.table2 tr td .isi-tabel {
+    font-size: 1rem;
+    color:#17445E;
+    font-weight: 500;
+}
