@@ -189,7 +189,10 @@ th {
 }
 
 .table2 tr td .isi-tabel {
-	text-align: center;
+	  text-align: center;
+    font-size: 1rem;
+    color:#17445E;
+    font-weight: 500;
 }
 
 .table2 th {
@@ -208,7 +211,7 @@ th {
 	border-spacing: 2px;
 }
 .table2 tr {
-	display: table-row;
+	  display: table-row;
     vertical-align: inherit;
     border-color: inherit;
 }
@@ -229,8 +232,3 @@ th {
   border-radius: 5px;
 }
 
-.table2 tr td .isi-tabel {
-    font-size: 1rem;
-    color:#17445E;
-    font-weight: 500;
-}
